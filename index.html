@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 
-	<body id="body" >
+	<body id="body" data-ng-app="resumeApp">
     <!--Preloader -->
     <!--/Preloader -->
 
@@ -29,22 +29,13 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row mdl-scroll-spy-1">
         <!--Title -->
-        <a href="index.html"><span class="mdl-layout-title">lars</span></a>
+        <a href="index.html"><span class="mdl-layout-title">lars a. lemos</span></a>
         <div class="mdl-layout-spacer"></div>
         <ul class="nav mdl-navigation mdl-layout--large-screen-only">
           <li><a class="mdl-navigation__link" data-scroll href="#body">about</a></li>
           <li><a class="mdl-navigation__link" data-scroll href="#skills_sec">skills</a></li>
-          <li><a class="mdl-navigation__link" data-scroll href="#portfolio_sec">portfolio</a></li>
           <li><a class="mdl-navigation__link" data-scroll href="#experience_sec">experience</a></li>
           <li><a class="mdl-navigation__link" data-scroll href="#education_sec">education</a></li>
-          <li><span id="blog_drp" class="mdl-navigation__link">blog</span>
-            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
-              data-mdl-for="blog_drp">
-              <li class="mdl-menu__item"><a href="blog-list.html">Blog List</a></li>
-              <li class="mdl-menu__item"><a href="image-blog-post.html">Image Blog Post</a></li>
-              <li class="mdl-menu__item"><a href="youtube-blog-post.html">Youtube Blog Post</a></li>
-            </ul>
-          </li>
           <li><a class="mdl-navigation__link" data-scroll href="#references_sec">references</a></li>
           <li><a class="mdl-navigation__link" data-scroll href="#contact_sec">contact</a></li>
         </ul>
@@ -80,23 +71,15 @@
 											<div class="candidate-img mb-35"></div>
 											<ul class="social-icons">
 												<li>
-													<a class="facebook-link" href="#">
-														<i id="tt1" class="zmdi zmdi-facebook"></i>
-														<div class="mdl-tooltip" data-mdl-for="tt1">
-															facebook
+													<a class="github-link" target="_blank" href="https://github.com/larslemos/">
+														<i id="tt3" class="zmdi zmdi-github"></i>
+														<div class="mdl-tooltip" data-mdl-for="tt3">
+															github
 														</div>
 													</a>
 												</li>
 												<li>
-													<a class="twitter-link" href="#">
-														<i id="tt2" class="zmdi zmdi-twitter"></i>
-														<div class="mdl-tooltip" data-mdl-for="tt2">
-															twitter
-														</div>
-													</a>
-												</li>
-												<li>
-													<a class="linkedin-link" href="#">
+													<a class="linkedin-link" target="_blank" href="https://www.linkedin.com/in/lars-albino-lemos-28446152/">
 														<i id="tt3" class="zmdi zmdi-linkedin"></i>
 														<div class="mdl-tooltip" data-mdl-for="tt3">
 															linkedin
@@ -104,8 +87,24 @@
 													</a>
 												</li>
 												<li>
+													<a class="facebook-link" target="_blank" href="https://www.facebook.com/lars.lemos">
+														<i id="tt1" class="zmdi zmdi-facebook"></i>
+														<div class="mdl-tooltip" data-mdl-for="tt1">
+															facebook
+														</div>
+													</a>
+												</li>
 												<li>
-													<a class="instagram-link" href="#">
+													<a class="twitter-link" target="_blank" href="https://twitter.com/toplars">
+														<i id="tt2" class="zmdi zmdi-twitter"></i>
+														<div class="mdl-tooltip" data-mdl-for="tt2">
+															twitter
+														</div>
+													</a>
+												</li>
+												<li>
+												<li>
+													<a class="instagram-link" target="_blank" href="https://www.instagram.com/t0plars/">
 														<i id="tt5" class="zmdi zmdi-instagram"></i>
 														<div class="mdl-tooltip" data-mdl-for="tt5">
 															instagram
@@ -161,7 +160,9 @@
 						<div class="timeline-wrap overflow-hide mb-30">
 							<ul class="timeline">
 								<li>
-									<div class="timeline-badge bg-blue no-icon"></div>
+									<div class="timeline-badge">
+											<i class="zmdi zmdi-graduation-cap font-blue"> </i>
+									</div>
 									<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
 										<div class="timeline-heading">
 											<h4 class="mb-10">master of computer applications</h4>
@@ -170,9 +171,10 @@
 										</div>
 									</div>
 								</li>
-
 								<li class="timeline-inverted">
-									<div class="timeline-badge bg-green no-icon"></div>
+									<div class="timeline-badge">
+											<i class="zmdi zmdi-graduation-cap font-green"> </i>
+									</div>
 									<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
 										<div class="timeline-heading">
 											<h4 class="mb-10">master of business administration</h4>
@@ -182,10 +184,12 @@
 									</div>
 								</li>
 								<li>
-									<div class="timeline-badge bg-yellow no-icon"></div>
+									<div class="timeline-badge">
+											<i class="zmdi zmdi-graduation-cap font-yellow"> </i>
+									</div>
 									<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-yellow">
 										<div class="timeline-heading">
-											<h4 class="mb-10">Bachelor Of Science</h4>
+											<h4 class="mb-10">bachelor of science</h4>
 											<span class="duration mb-5">2009 - 2012</span>
 											<span class="institution">osmania university</span>
 										</div>
@@ -214,10 +218,10 @@
 										</div>
 										<div class="timeline-body">
 											<p class="mt-25">
-													Meet with Stakeholders and partners and obtain Software Requirements Specification.
-													Design and Development of Web applications with JavaEE, JavaScript(Angular) and PHP(Laravel), Dashboards.
-													Development of Tests (Unit, Functional, Integration)
-													Application Development of Point of Care for patient follow-up, Laboratory Information Systems for low level lab facilities.
+												<p>	Meet with Stakeholders and partners and obtain Software Requirements Specification.</p>
+												<p>	Design and Development of Web applications with JavaEE, JavaScript(Angular) and PHP(Laravel), Dashboards.</p>
+												<p>	Development of Tests (Unit, Functional, Integration)</p>
+												<p>	Application Development of Point of Care for patient follow-up, Laboratory Information Systems for low level lab facilities.</p>
 											</p>
 										</div>
 									</div>
@@ -235,11 +239,11 @@
 										</div>
 										<div class="timeline-body">
 											<p class="mt-25">
-												A campaign that consists of a program that provided African students with several
+												<p> A campaign that consists of a program that provided African students with several </p>
 												projects and education that foster the use of ICT into their university training.
-												Create and present Information Technology manuals of most useful open source tools
-												Train the African students in India with the use of project management tools
-												Give sessions on communication skills and presentations skills.
+												<p> Create and present Information Technology manuals of most useful open source tools. </p>
+												<p> Train the African students in India with the use of project management tools </p>
+												<p> Give sessions on communication skills and presentations skills. </p>
 											</p>
 										</div>
 									</div>
@@ -257,9 +261,9 @@
 										</div>
 										<div class="timeline-body">
 											<p class="mt-25">
-												A featured internship program designed to equip a graduate student with the knowledge of Software Development using Agile Practices
-												Design and Development of Software with Python(Django) and MySQL, SQLite.
-												Software Development with TDD, BDD, XP, Continuous Integration and Delivery
+												<p> A featured internship program designed to equip a graduate student with the knowledge of Software Development using Agile Practices </p>
+												<p> Design and Development of Software with Python(Django) and MySQL, SQLite. </p>
+												<p> Software Development with TDD, BDD, XP, Continuous Integration and Delivery </p>
 												</p>
 										</div>
 									</div>
@@ -281,7 +285,7 @@
 										<div class="progress-bar-graph">
 											<div class="progress-bar-wrap">
 												<div class="bar-wrap blue-bar">
-													<span data-width="60"></span>
+													<span data-width="90"></span>
 												</div>
 											</div>
 										</div>
@@ -291,7 +295,7 @@
 										<div class="progress-bar-graph">
 											<div class="progress-bar-wrap">
 												<div class="bar-wrap green-bar">
-													<span data-width="90"></span>
+													<span data-width="70"></span>
 												</div>
 											</div>
 										</div>
@@ -355,37 +359,37 @@
 								<div class="mdl-card mdl-shadow--2dp">
 									<i class="zmdi zmdi-format-color-fill font-blue profile-icon"></i>
 									<h4 class="mb-15">user interface</h4>
-									<p>A mobile first responsive template with material design.</p>
-
+									<p>Build detailed websites and webapplication with asthonishing
+										look and feel to satisfy user experience with bootstrap sass, angular and node .</p>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
 								<div class="mdl-card mdl-shadow--2dp">
 									<i class="zmdi zmdi-format-color-text font-green profile-icon"></i>
-									<h4 class="mb-15">branding</h4>
-									<p>Comes with light and dark options. Suitable for the universe.</p>
+									<h4 class="mb-15">speaker</h4>
+									<p>Provide sessions and in-depth trainings on new tech for experienced
+										developers and students.</p>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
 								<div class="mdl-card mdl-shadow--2dp">
 									<i class="zmdi zmdi-comments font-yellow profile-icon"></i>
-									<h4 class="mb-15">communication</h4>
-									<p>Extra ordinary setting pannel with lots of awesome features.</p>
-
+									<h4 class="mb-15">communication & vizualization </h4>
+									<p>Develop dashboards and reports that communicate the state of
+										processes and business performance .</p>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
 								<div class="mdl-card mdl-shadow--2dp">
 									<i class="zmdi zmdi-grain font-red profile-icon"></i>
 									<h4 class="mb-15">strategy</h4>
-									<p>Easy customizable framework using bootstrap sass.</p>
-
+									<p>Improve team productivity using agile(scrum) framework and
+										developers best practices with XP and TDD .</p>
 								</div>
 							</div>
 						</div>
 					</section>
 					<!--/Profile Sec-->
-
 
 					<!--Contact Sec-->
 					<section id="contact_sec" class="contact-sec sec-pad-top-sm">
@@ -394,7 +398,7 @@
 							<div id="form_card_height" class="col-sm-7 mb-30">
 								<div  class="mdl-card mdl-shadow--2dp" data-ng-controller="ContactController">
 									<h4 class="mb-10 font-unsetcase">
-										So, <span  data-ng-bind="formData.inputName||'There'">lets talk</span> </h4>
+										Hey, <span  data-ng-bind="formData.inputName||'there'">  </span> lets talk </h4>
 									<form data-ng-submit="submit(contactform, $event)"  name="contactform"  method="post" class=" form-horizontal mb-30" role="form">
 										<div class="form-group" data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
 											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -435,8 +439,6 @@
 						</div>
 					</section>
 					<!--/Contact Sec-->
-	        <!--S Sec -->
-	        <!--/S Sec -->
 
 				<!--Footer Sec-->
 				<footer class="footer-sec sec-pad-top-sm sec-pad-bottom text-center">
@@ -444,39 +446,45 @@
 					<p class="mt-10">Lars Lemos 2017. All rights reserved.</p>
 						<ul class="social-icons mt-10">
 							<li>
-								<a class="facebook-link" href="#">
-									<i id="tt6" class="zmdi zmdi-facebook"></i>
+								<a class="github-link" target="_blank" href="https://github.com/larslemos/">
+									<i id="tt6" class="zmdi zmdi-github"></i>
 									<div class="mdl-tooltip" data-mdl-for="tt6">
-										facebook
+										github
 									</div>
 								</a>
 							</li>
 							<li>
-								<a class="twitter-link" href="#">
-									<i id="tt7" class="zmdi zmdi-twitter"></i>
+								<a class="linkedin-link" target="_blank" href="https://www.linkedin.com/in/lars-albino-lemos-28446152/">
+									<i id="tt7" class="zmdi zmdi-linkedin"></i>
 									<div class="mdl-tooltip" data-mdl-for="tt7">
-										twitter
-									</div>
-								</a>
-							</li>
-							<li>
-								<a class="linkedin-link" href="#">
-									<i id="tt8" class="zmdi zmdi-linkedin"></i>
-									<div class="mdl-tooltip" data-mdl-for="tt8">
 										linkedin
 									</div>
 								</a>
 							</li>
 							<li>
-								<a class="instagram-link" href="#">
+									<a class="twitter-link" target="_blank" href="https://twitter.com/toplars">
+										<i id="tt8" class="zmdi zmdi-twitter"></i>
+										<div class="mdl-tooltip" data-mdl-for="tt8">
+											twitter
+										</div>
+									</a>
+							</li>
+							<li>
+								<a class="facebook-link" target="_blank" href="https://www.facebook.com/lars.lemos">
+									<i id="tt9" class="zmdi zmdi-facebook"></i>
+									<div class="mdl-tooltip" data-mdl-for="tt9">
+										facebook
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="instagram-link" target="_blank" href="https://www.instagram.com/t0plars/">
 									<i id="tt10" class="zmdi zmdi-instagram"></i>
 									<div class="mdl-tooltip" data-mdl-for="tt10">
 										instagram
 									</div>
 								</a>
 							</li>
-						</ul>
-
 				</footer>
 				<!--Footer Sec-->
 				</div>
@@ -502,5 +510,7 @@
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/froogaloop2.min.js"></script>
 		<script src="js/jquery.slimscroll.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxXt2P7-U38bK0xEFIT-ebZJ1ngK8wjww"></script>
+		<script src="js/init.js"></script>
 	</body>
 </html>
